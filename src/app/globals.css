@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@import "../styles/tokens.css";
+
+/* 다크 모드는 미정이다 (design-guide DG-02). 결정 전까지 라이트 모드만 둔다. */
+@theme inline {
+  --font-sans: var(--font-pretendard), system-ui, sans-serif;
+}
+
+body {
+  background: var(--omw-color-bg-default);
+  color: var(--omw-color-text-primary);
+}
+
+/* 잔여시간 등 바뀌는 숫자는 폭이 흔들리지 않게 고정폭 숫자로 쓴다 (design-guide 3-3) */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
